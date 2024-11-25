@@ -4,23 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8c8622-be4f-4c9c-94a9-5d8301fc05e7" name="Changes" comment="init project structure">
-      <change afterPath="$PROJECT_DIR$/public/cog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/cylinder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/noodle.png" afterDir="false" />
+    <list default="true" id="aa8c8622-be4f-4c9c-94a9-5d8301fc05e7" name="Changes" comment="build out landing page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/GeistMonoVF.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts/GeistVF.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/globe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/window.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732555527780</updated>
-      <workItem from="1732555536441" duration="10994000" />
+      <workItem from="1732555536441" duration="12289000" />
     </task>
     <task id="LOCAL-00001" summary="init project structure">
       <option name="closed" value="true" />
@@ -103,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732557527655</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="build out landing page">
+      <option name="closed" value="true" />
+      <created>1732574423848</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732574423848</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project structure" />
+    <MESSAGE value="build out landing page" />
+    <option name="LAST_COMMIT_MESSAGE" value="build out landing page" />
   </component>
 </project>
