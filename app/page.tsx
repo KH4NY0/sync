@@ -2,6 +2,7 @@ import { ArrowRight } from 'lucide-react';
 import cogImage from '@/public/cog.png';
 import cylinderImage from '@/public/cylinder.png';
 import Image from 'next/image';
+import Link from "next/link";
 
 const LandingPage = () => {
     return (
@@ -18,7 +19,7 @@ const LandingPage = () => {
                     </p>
                     <div className="flex gap-1 items-center mt-[30px]">
                         <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">
-                            Get Started
+                            <Link href="">Get Started</Link>
                         </button>
                         <button className="bg-transparent px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight gap-1">
                             View source code <ArrowRight size={24} />
@@ -26,7 +27,7 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
-                    <Image src={cogImage} alt="Cog image" className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6"/>
+                    <Image src={cogImage} alt="Cog image" className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:-left-0"/>
                     <Image src={cylinderImage} width={220} height={220} alt="cylinder image" className="hidden md:block -top-8 -left-32 md:absolute" />
                 </div>
             </div>
