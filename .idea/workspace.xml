@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8c8622-be4f-4c9c-94a9-5d8301fc05e7" name="Changes" comment="implement dashboard structure">
+    <list default="true" id="aa8c8622-be4f-4c9c-94a9-5d8301fc05e7" name="Changes" comment="implement &quot;create invoice&quot; form">
+      <change afterPath="$PROJECT_DIR$/db/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
@@ -19,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -92,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732555527780</updated>
-      <workItem from="1732555536441" duration="27523000" />
+      <workItem from="1732555536441" duration="30088000" />
     </task>
     <task id="LOCAL-00001" summary="init project structure">
       <option name="closed" value="true" />
@@ -126,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732652873050</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="implement &quot;create invoice&quot; form">
+      <option name="closed" value="true" />
+      <created>1732662242592</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732662242592</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +146,7 @@
     <MESSAGE value="init project structure" />
     <MESSAGE value="build out landing page" />
     <MESSAGE value="implement dashboard structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement dashboard structure" />
+    <MESSAGE value="implement &quot;create invoice&quot; form" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement &quot;create invoice&quot; form" />
   </component>
 </project>

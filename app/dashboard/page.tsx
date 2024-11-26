@@ -1,3 +1,6 @@
+import { sql } from "drizzle-orm";
+import { db } from "@/db";
+
 import {
     Table,
     TableBody,
@@ -24,8 +27,9 @@ import {Label} from "@/components/ui/label";
 import {Input} from "@/components/ui/input";
 import {Textarea} from "@/components/ui/textarea";
 
+const Dashboard = async () => {
+    const results = await db.execute(sql`SELECT current_database()`)
 
-const Dashboard = () => {
     return (
         <div className="flex flex-col justify-center h-full text-center gap max-w-5xl mx-auto my-12">
             <div className="flex justify-between">
@@ -52,19 +56,23 @@ const Dashboard = () => {
 
                                         <form className="grid gap-4 max-w-xs">
                                             <div>
-                                                <Label htmlFor="name" className="block font-semibold text-sm mb-2">Client Name</Label>
+                                                <Label htmlFor="name" className="block font-semibold text-sm mb-2">Client
+                                                    Name</Label>
                                                 <Input id="name" name="name" type="text"/>
                                             </div>
                                             <div>
-                                                <Label htmlFor="email" className="block font-semibold text-sm mb-2">Client Email</Label>
+                                                <Label htmlFor="email" className="block font-semibold text-sm mb-2">Client
+                                                    Email</Label>
                                                 <Input id="email" name="email" type="email"/>
                                             </div>
                                             <div>
-                                                <Label htmlFor="amount" className="block font-semibold text-sm mb-2">Amount</Label>
+                                                <Label htmlFor="amount"
+                                                       className="block font-semibold text-sm mb-2">Amount</Label>
                                                 <Input id="amount" name="amount" type="text"/>
                                             </div>
                                             <div>
-                                                <Label htmlFor="description" className="block font-semibold text-sm mb-2">Description</Label>
+                                                <Label htmlFor="description"
+                                                       className="block font-semibold text-sm mb-2">Description</Label>
                                                 <Textarea id="description" name="description"></Textarea>
                                             </div>
                                         </form>
@@ -80,6 +88,8 @@ const Dashboard = () => {
                     </AlertDialog>
                 </p>
             </div>
+
+            { JSON.stringify(results) }
 
             <Table>
                 <TableCaption>A list of your recent invoices.</TableCaption>
