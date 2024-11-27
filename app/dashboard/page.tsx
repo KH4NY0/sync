@@ -26,6 +26,8 @@ import { CirclePlus } from "lucide-react";
 import {Label} from "@/components/ui/label";
 import {Input} from "@/components/ui/input";
 import {Textarea} from "@/components/ui/textarea";
+import { createAction } from "@/actions"
+
 
 const Dashboard = async () => {
     const results = await db.execute(sql`SELECT current_database()`)
@@ -54,42 +56,48 @@ const Dashboard = async () => {
                                             </h1>
                                         </div>
 
-                                        <form className="grid gap-4 max-w-xs">
+                                        <form action={createAction} className="grid gap-4 max-w-xs">
                                             <div>
-                                                <Label htmlFor="name" className="block font-semibold text-sm mb-2">Client
-                                                    Name</Label>
+                                                <Label htmlFor="name" className="block font-semibold text-sm mb-2">
+                                                    Client Name
+                                                </Label>
                                                 <Input id="name" name="name" type="text"/>
                                             </div>
                                             <div>
-                                                <Label htmlFor="email" className="block font-semibold text-sm mb-2">Client
-                                                    Email</Label>
+                                                <Label htmlFor="email" className="block font-semibold text-sm mb-2">
+                                                    Client Email
+                                                </Label>
                                                 <Input id="email" name="email" type="email"/>
                                             </div>
                                             <div>
-                                                <Label htmlFor="amount"
-                                                       className="block font-semibold text-sm mb-2">Amount</Label>
+                                                <Label htmlFor="amount" className="block font-semibold text-sm mb-2">
+                                                    Amount
+                                                </Label>
                                                 <Input id="amount" name="amount" type="text"/>
                                             </div>
                                             <div>
                                                 <Label htmlFor="description"
-                                                       className="block font-semibold text-sm mb-2">Description</Label>
+                                                       className="block font-semibold text-sm mb-2">
+                                                    Description
+                                                </Label>
                                                 <Textarea id="description" name="description"></Textarea>
+                                            </div>
+                                            <div className="flex">
+                                                <button>
+                                                    <AlertDialogAction>Create</AlertDialogAction>
+                                                </button>
+                                                <AlertDialogCancel>Cancel</AlertDialogCancel>
                                             </div>
                                         </form>
 
                                     </div>
                                 </AlertDialogTitle>
                             </AlertDialogHeader>
-                            <AlertDialogFooter>
-                                <AlertDialogCancel>Cancel</AlertDialogCancel>
-                                <AlertDialogAction>Create</AlertDialogAction>
-                            </AlertDialogFooter>
                         </AlertDialogContent>
                     </AlertDialog>
                 </p>
             </div>
 
-            { JSON.stringify(results) }
 
             <Table>
                 <TableCaption>A list of your recent invoices.</TableCaption>

@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8c8622-be4f-4c9c-94a9-5d8301fc05e7" name="Changes" comment="install &amp; configure Xata + Drizzle ORM">
-      <change afterPath="$PROJECT_DIR$/db/schema.ts" afterDir="false" />
+    <list default="true" id="aa8c8622-be4f-4c9c-94a9-5d8301fc05e7" name="Changes" comment="create table schemas for invoice data">
+      <change afterPath="$PROJECT_DIR$/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drizzle.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/dashboard/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732555527780</updated>
-      <workItem from="1732555536441" duration="31344000" />
+      <workItem from="1732555536441" duration="39763000" />
     </task>
     <task id="LOCAL-00001" summary="init project structure">
       <option name="closed" value="true" />
@@ -141,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732665002366</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="create table schemas for invoice data">
+      <option name="closed" value="true" />
+      <created>1732666428048</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732666428048</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +166,7 @@
     <MESSAGE value="implement dashboard structure" />
     <MESSAGE value="implement &quot;create invoice&quot; form" />
     <MESSAGE value="install &amp; configure Xata + Drizzle ORM" />
-    <option name="LAST_COMMIT_MESSAGE" value="install &amp; configure Xata + Drizzle ORM" />
+    <MESSAGE value="create table schemas for invoice data" />
+    <option name="LAST_COMMIT_MESSAGE" value="create table schemas for invoice data" />
   </component>
 </project>
