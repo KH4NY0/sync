@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import {ClerkProvider} from "@clerk/nextjs";
 import {dark} from "@clerk/themes";
+import {cn} from "@/lib/utils";
+import Provider from "./Provider";
 
 export const metadata: Metadata = {
   title: "Sync",
@@ -27,10 +29,15 @@ export default function RootLayout({
                 }
         }}
       >
-            <html lang="en">
+            <html lang="en" suppressHydrationWarning>
               <body
+                  className={cn(
+                      "min-h-screen antialiased",
+                  )}
               >
-                {children}
+              <Provider>
+                  {children}
+              </Provider>
               </body>
             </html>
       </ClerkProvider>
