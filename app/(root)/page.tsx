@@ -1,5 +1,9 @@
-const LandingPage = () => {
-  return <h1>Landing Page</h1>
+const Home = () => {
+  return (
+      <main>
+
+      </main>
+  )
 }
 
-export default LandingPage
+export default Home
