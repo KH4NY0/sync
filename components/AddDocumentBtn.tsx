@@ -2,7 +2,7 @@
 
 import {Button} from "@/components/ui/button";
 import Image from "next/image";
-import createDocument from "@/lib/actions/room.actions";
+import { createDocument } from "@/lib/actions/room.actions";
 import { useRouter } from "next/navigation";
 
 const AddDocumentBtn = ({ userId, email }: AddDocumentBtnProps) => {

@@ -6,7 +6,7 @@ import {RoomAccesses} from "@liveblocks/node";
 import {revalidatePath} from "next/cache";
 import {parseStringify} from "@/lib/utils";
 
-const createDocument = async ({ userId, email }: CreateDocumentParams) => {
+export const createDocument = async ({ userId, email }: CreateDocumentParams) => {
     const roomId = nanoid()
 
     try {
@@ -23,7 +23,7 @@ const createDocument = async ({ userId, email }: CreateDocumentParams) => {
         const room = await liveblocks.createRoom(roomId, {
             metadata,
             usersAccesses,
-            defaultAccesses: []
+            defaultAccesses: ['room:write']
         });
 
         revalidatePath('/')
@@ -36,4 +36,22 @@ const createDocument = async ({ userId, email }: CreateDocumentParams) => {
 
 }
 
-export default createDocument
+export const getDocument = async ({ roomId, userId }: { roomId: string; userId: string }) => {
+   try {
+       const room = await liveblocks.getRoom(roomId)
+
+       // const hasAccess = Object.keys(room.usersAccesses).includes(userId)
+
+     //  if (!hasAccess) {
+     //      throw new Error('You do not have access to this document')
+     //  }
+
+       return parseStringify(room)
+   } catch (error) {
+       console.log(`Error happened while getting a room: ${error}`)
+   }
+
+}
+
+
+
