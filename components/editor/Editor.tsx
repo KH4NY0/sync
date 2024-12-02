@@ -20,6 +20,7 @@ import {
 import {Loader} from "lucide-react";
 import FloatingToolbarPlugin from './plugins/FloatingToolbarPlugin';
 import {useThreads} from "@liveblocks/react/suspense";
+import Comments from "@/components/Comments";
 
 function Placeholder() {
   return <div className="editor-placeholder">Type something...</div>;
@@ -67,6 +68,7 @@ export function Editor({ roomId, currentUserType }: { roomId: string, currentUse
           <LiveblocksPlugin>
             <FloatingComposer className="w-[350px]" />
             <FloatingThreads threads={threads} />
+            <Comments />
           </LiveblocksPlugin>
         </div>
 
